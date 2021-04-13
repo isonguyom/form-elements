@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formcss.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <form target="_self" method="POST" enctype="">
+            <input type="search" name="formsearch" placeholder="Search..">
+        <fieldset>
+            <legend>Personal Information</legend>
+            Name
+            <input type="text" name="firstname" value="Firstname" placeholder="" required>
+            <input type="text" name="lastname" value="" placeholder="Lastname"><br>
+            <label>Username <input type="text" name="username" value="" placeholder="" required></label><br>
+            <!-- Encryption: <keygen name="security"> -->
+            <label>Password <input type="password" name="password" value="" placeholder="***********" minlength="7"></label><br>
+            <label>Address <input type="text" name="address" value="" placeholder=""></label><br>
+            <label>Country <input type="text" name="country" value="Nigeria" placeholder="" disabled></label><br>
+            <label>Tel <input type="tel" name="tel" value="" placeholder="" maxlength="14"></label><br>
+            <label>Email <input type="email" name="email" value="" placeholder="" autocomplete="on"></label><br>
+            Gender: 
+            <label>Male<input type="radio" name="gender" value="male" checked></label>
+                <label> Female<input type="radio" name="gender" value="female"></label>
+                <label> Other<input type="radio" name="gender" value="other"></label><br>
+            <label>Date of birth <input type="date" name="dob" value="" placeholder=""></label><br>
+            <label>Website <input type="url" name="homepage" value="wwww.example.com" readonly></label>
+         </fieldset>
+         <fieldset>
+                <legend>Education/Training</legend>
+                <label>High School <input type="text" name="highschool" value="" placeholder=""></label><br>
+                <label>Tertiary Institution <input type="text" name="tertiaryinstitution" value="" placeholder=""></label><br>
+                <label>Graduate School <input type="text" name="graduateschool" value="" placeholder=""></label><br>
+                <label>Training <input type="text" name="training" value="" placeholder=""></label><br>
+         </fieldset>
+         <fieldset>
+                <legend>Favorite Things</legend>
+                Hobbies: 
+                <label>Reading<input type="checkbox" name="hobby1" value="" placeholder=""></label>
+                <label>Dancing<input type="checkbox" name="hobby2" value="" placeholder=""></label>
+                <label>Singing<input type="checkbox" name="hobby3" value="" placeholder=""></label><br>      
+                <label>Favorite Sport
+                    <select name="sport">
+                        <option selected disabled>Choose</option>
+                        <option value="football">Football</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="volleyball">Volleyball</option>
+                        <option value="boxing">Boxing</option>
+                    </select>
+                </label><br>
+                <label>Favorite Sport Club
+                    <select name="sportclub">
+                            <optgroup label="Football">
+                              <option value="arsenal">Arsenal</option>
+                              <option value="chelsea">Chelsea</option>
+                            </optgroup>
+                            <optgroup label="Basketball">
+                              <option value="lakers">Lakers</option>
+                              <option value="warriors">Warriors</option>
+                            </optgroup>
+                    </select>    
+                </label><br>
+                <label>Favorite Food <input list="favoritefood" type="text" name="favoritefood" value="" placeholder="">
+                    <datalist id="favoritefood">
+                            <option value="Fried Rice">
+                            <option value="Jellof Rice">
+                            <option value="Beans">
+                            <option value="Okro soup">
+                            <option value="Porridge">
+                          </datalist>             
+                </label><br>
+                <label>Favorite color <input type="color" name="favcolor"></label>
+         </fieldset>
+         <fieldset>
+                <legend>More Information</legend>
+             <label>Summit a file <input type="file" name="document" multiple></label><br>
+             <label>Time <input type="time" name="usr_time"></label><br>
+            <label>Range <input type="range" name="points" min="0" max="10"></label><br>
+            <label>Describe yourself <br>
+                <textarea name="bio" rows="8" cols="40" placeholder="Type here..."></textarea>
+            </label><br>
+            <label>Solve
+            <input type="number" id="a" value="50">
+            +<input type="number" id="b" value="50">
+            =<output name="x" for="a b"></output>
+            </label>
+         </fieldset>
+         <input type="submit" value="Submit">    
+    </form>
+</body> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae velit ad ipsam aut labore ducimus nemo omnis provident nihil, veniam quisquam numquam consequuntur doloribus vitae placeat eveniet quos. Reiciendis, ex.
+
+</html>

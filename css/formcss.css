@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: silver;
+    padding: 50px 130px;
+}
+
+input {
+    background-color: white;
+    height: 40px;
+    color:   rgb(3, 110, 96);
+    float: right;
+    margin-right: 70px;
+}
+
+input[type=search] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+input[type=search]:focus {
+    width: 100%;
+}
+
+input[type=text], [type="password"], [type="email"], [type="tel"], [type="url"], select, textarea {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    display: inline-block;
+    border: 2px solid rgb(3, 110, 96);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"], [type="checkbx"] {
+    box-sizing: border-box;
+}
+
+input[type="color"] {
+    width: 40%;
+    border: none);
+}
+
+input[type="date"], [type="time"] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    display: inline-block;
+    border: 2px solid rgb(3, 110, 96);
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color:  rgb(3, 110, 96);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+}
+
+fieldset {
+    padding: 10px;
+    font-size: 1.3em;
+    color: rgb(3, 110, 96);
+    line-height: 30px;
+}
+
+
+
+fieldset label {
+    color: rgb(3, 110, 96)
+}
+
+fieldset > legend {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+label {
+text-align: unset
+}
+
+p:hover{
+    background-color: brown;
+}
+
+p::before{
+
+}
